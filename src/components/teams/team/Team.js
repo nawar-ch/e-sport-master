@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useParams } from "react-router";
-import { fetchTeamById, unsetTeam } from "./teamSlice";
+import {useDispatch, useSelector } from "react-redux";
+import {useParams} from "react-router";
+import {fetchTeamById,unsetTeam} from "./teamSlice";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import ImageListItem from "@mui/material/ImageListItem";
@@ -15,9 +15,7 @@ export default function Team() {
       width: "80%", 
       height: "auto",
       padding: "30px 0" 
-     },
-
-    
+     },   
      image:{
       padding: "30px 0"
      },
@@ -25,7 +23,6 @@ export default function Team() {
       marginTop: 30 
      },
      title2:{
-      fontWeight: "normal", 
       paddingBottom: 50 
      }
   }
@@ -45,7 +42,6 @@ export default function Team() {
    
       <Container maxWidth="sm" style={{justifyContent:"center"}}>
         <Box sx={{
-            bgcolor: "inherite",
             display: "flex",
             alignItems: "center",
             justifContent: "center",
@@ -67,8 +63,7 @@ export default function Team() {
                 return(
                   <ul> 
                    <li> <span key={index} className="mr-3">{player.name}</span> </li> 
-                  </ul>
-                   
+                  </ul>                  
                       )
                   })}
             </span>
