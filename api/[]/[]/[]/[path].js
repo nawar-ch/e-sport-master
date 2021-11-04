@@ -10,6 +10,7 @@ export default (req, res) => {
    
     if(!apiToken) {
         apiToken = 'Bearer'+ REACT_APP_ESPORT_API_TOKEN;
+        console.log(REACT_APP_ESPORT_API_TOKEN);
     }
 
     /* request params */
