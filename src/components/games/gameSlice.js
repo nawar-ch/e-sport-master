@@ -11,6 +11,7 @@ export const fetchGames = createAsyncThunk("game/fetchGames", async () => {
       "Accept": "application/json",
       "Authorization": `Bearer ${process.env.REACT_APP_ESPORT_API_TOKEN}`,
       //"Access-Control-Allow-Origin": "http://localhost:5000",
+      "origin" : "https://e-sport-master.vercel.app",
     },
   };
   const response = await fetch(
