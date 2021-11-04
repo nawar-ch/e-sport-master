@@ -13,7 +13,7 @@ export const fetchGames = createAsyncThunk("game/fetchGames", async () => {
     },
   };
   const response = await fetch(
-    `${process.env.REACT_APP_ESPORT_API}/videogames`,
+    `${process.env.REACT_APP_ESPORT_API}/api/videogames`,
     options
   );
   const data = await response.json();
