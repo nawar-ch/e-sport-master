@@ -31,10 +31,10 @@ export default function Navbar() {
           </Typography>
           <Stack direction="row" spacing={2}>
             <GamesComboBox/>
-            <Link style={styles.Link} to="/teams">       
+            <Link style={styles.Link} to="/api/teams">       
               <Button style={styles.Button} variant="outlined">TEAMS</Button>
             </Link>
-            <Link style={styles.Link} to="/leagues">
+            <Link style={styles.Link} to="/api/leagues">
               <Button style={styles.Button} variant="outlined"> lEAGUES </Button>
             </Link>
           </Stack>
