@@ -9,7 +9,7 @@ export default (req, res) => {
     var apiToken = req.headers['authorization'];
     
     if(!apiToken) {
-        apiToken = 'Bearer REPLACE_WITH_API_TOKEN';
+        apiToken = 'Bearer '+ REACT_APP_ESPORT_API_TOKEN;
     }
 
     /* request params */
