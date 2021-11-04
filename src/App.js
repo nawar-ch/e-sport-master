@@ -15,10 +15,10 @@ function App() {
         <Switch>
           <Route exact path="/"
             render={() => {
-              return <Redirect to="/leagues" />;
+              return <Redirect to="api/leagues" />;
             }}
           />
-          <Route exact path="/leagues">
+          <Route exact path="api/leagues">
             <Leagues />
           </Route>
           <Route exact path="/leagues/:id">
