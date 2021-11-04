@@ -8,13 +8,15 @@ export const fetchGames = createAsyncThunk("game/fetchGames", async () => {
   const options = {
     method: "GET",
     headers: {
-      Accept: "application/json",
-      Authorization: `Bearer ${process.env.REACT_APP_ESPORT_API_TOKEN}`,
+      "Accept": "application/json",
+      "Authorization": `Bearer ${process.env.REACT_APP_ESPORT_API_TOKEN}`,
+      //"Access-Control-Allow-Origin": "http://localhost:5000",
     },
   };
   const response = await fetch(
     `${process.env.REACT_APP_ESPORT_API}/videogames`,
-    options
+    options,
+    { mode: 'no-cors'}
   );
   const data = await response.json();
 

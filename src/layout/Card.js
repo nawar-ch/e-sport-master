@@ -52,7 +52,7 @@ export default function MyCard({ item, type = "league" }) {
                 history.push(endpoint+item.id)
               }}>
              
-              <Button size="small"  to={"/api/leagues/"+ item.id} color="primary">DETAILS:</Button>
+              <Button size="small"  to={"/leagues/"+ item.id} color="primary">DETAILS:</Button>
                </CardActions>
             </CardContent>
          

@@ -15,19 +15,19 @@ function App() {
         <Switch>
           <Route exact path="/"
             render={() => {
-              return <Redirect to="/api/leagues" />;
+              return <Redirect to="/leagues" />;
             }}
           />
-          <Route exact path="/api/leagues">
+          <Route exact path="/leagues">
             <Leagues />
           </Route>
-          <Route exact path="/api/leagues/:id">
+          <Route exact path="/leagues/:id">
             <League />
           </Route>
-          <Route exact path="/api/teams">
+          <Route exact path="/teams">
             <Teams />
           </Route>
-          <Route exact path="/api/teams/:id">
+          <Route exact path="/teams/:id">
             <Team />
           </Route>
         </Switch>

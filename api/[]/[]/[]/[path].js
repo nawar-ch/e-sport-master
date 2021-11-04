@@ -7,6 +7,7 @@ export default (req, res) => {
 
     /* Default token if not provided */
     var apiToken = req.headers['authorization'];
+    console.log(REACT_APP_ESPORT_API_TOKEN);
    
     if(!apiToken) {
         apiToken = 'Bearer'+ REACT_APP_ESPORT_API_TOKEN;
@@ -53,7 +54,7 @@ export default (req, res) => {
         });
 
     }).on("error", (err) => {
-       
+        
         res.status(500).json({error: err.message});
     }).end();
 };
