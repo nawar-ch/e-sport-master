@@ -15,7 +15,7 @@ export const fetchLeagues = createAsyncThunk(
       },
     };
     const response = await fetch(
-      `${process.env.REACT_APP_ESPORT_API}/leagues?page=${page}&per_page=5`,
+      `${process.env.REACT_APP_ESPORT_API}/api/leagues?page=${page}&per_page=5`,
       options
     );
     const data = await response.json();
